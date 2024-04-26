@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="brandSelect" onchange="updateModelsDropdown()">
+        <option value="" selected disabled>Select Brand</option>
+        <option  value="Samsung">Samsung</option>
+        <option value="IPhone">IPhone</option>
+        <option value="Oppo">Oppo</option>
+        <option value="Vivo">Vivo</option>
+    </select>
+    <select id="modelSelect" onchange="searchByBrandAndModel()">
+        <option value=""selected disabled>Select Model</option>
+    </select>
+    <div id="results"></div>
+</body>
+<script src="app.js"></script>
+</html>
